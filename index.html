@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gamer Mega Pack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="overlay">
+  FPS: <span id="fps">60</span>
+</div>
+
+<header>
+  <h1>🎮 Gamer Mega Pack</h1>
+  <p>Performance Dashboard (Simulated Tweaks)</p>
+</header>
+
+<div class="grid">
+
+  <section class="card">
+    <h2>⚡ FPS Booster</h2>
+    <button onclick="toggleFPS()">Toggle FPS Booster</button>
+    <button onclick="boostFPS()">Boost FPS</button>
+    <p id="status">Status: Normal</p>
+  </section>
+
+  <section class="card">
+    <h2>🎮 NVIDIA Tweaks</h2>
+
+    <label><input type="checkbox"> Low Latency Mode</label>
+    <label><input type="checkbox"> Performance Mode</label>
+    <label><input type="checkbox"> Disable V-Sync</label>
+    <label><input type="checkbox"> Max Power Priority</label>
+
+    <button onclick="applyTweaks()">Apply Tweaks</button>
+    <p id="gpuStatus">GPU: Default Settings</p>
+  </section>
+
+  <section class="card">
+    <h2>🧠 System Optimizer</h2>
+    <button onclick="cleanCache()">Clean Cache</button>
+    <button onclick="gameMode()">Enable Game Mode</button>
+    <p id="sysStatus">System: Idle</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
